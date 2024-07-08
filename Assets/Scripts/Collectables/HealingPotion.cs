@@ -29,6 +29,7 @@ public class HealingPotion : MonoBehaviour
         {
             DeactivateAllColliders(); // We de-activate all of the object's colliders
         }
+        ReactivateColliders();
     }
 
     private void DeactivateAllColliders() // Method to de-activate object's colliders
@@ -37,6 +38,15 @@ public class HealingPotion : MonoBehaviour
         foreach (Collider2D collider in colliders) // for every single collider
         {
             collider.enabled = false; // de-activate collider
+        }
+    }
+
+    private void ReactivateColliders()
+    {
+        Collider2D[] colliders = GetComponents<Collider2D>();
+        foreach (Collider2D collider in colliders)
+        {
+            collider.enabled = true;
         }
     }
 }

@@ -135,6 +135,12 @@ public class PlayerLife : MonoBehaviour
         GameManager.instance.SetHealth(currentHealth);
     }
 
+    public void AddChance(int chance) 
+    {
+        chances = chances + chance;
+        GameManager.instance.SetChances(chances);
+    }
+
     public void Respawn() 
     {
         player_body.bodyType = RigidbodyType2D.Dynamic;
