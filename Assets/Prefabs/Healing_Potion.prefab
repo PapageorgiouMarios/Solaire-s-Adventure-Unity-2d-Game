@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1052493821
-  m_SortingLayer: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -630200692, guid: cc7789e7d3e7a2f4897fcda94e0a5542, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -166,3 +166,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health_value: 1
+  healSound: {fileID: 8300000, guid: cd12830a914ff4c46b7e415c2064111b, type: 3}

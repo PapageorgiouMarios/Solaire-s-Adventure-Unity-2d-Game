@@ -214,6 +214,7 @@ MonoBehaviour:
   iFramesDuration: 0
   numberOfFlashes: 0
   components: []
+  hurtSound: {fileID: 8300000, guid: 25f7ec032892ee140b2de4da09708e0e, type: 3}
   frames_activated: 0
 --- !u!114 &4060366011634178617
 MonoBehaviour:
@@ -231,6 +232,7 @@ MonoBehaviour:
   projectile_position: {fileID: 7108724882247901681}
   leftEdge: {fileID: 9064069730445508420}
   rightEdge: {fileID: 4240409221224371384}
+  lightningSound: {fileID: 8300000, guid: 89155d47ab5b98e46a77c993f4a45792, type: 3}
 --- !u!95 &7113978394272830074
 Animator:
   serializedVersion: 5
