@@ -1,5 +1,6 @@
 using System.Data;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerRespawn : MonoBehaviour
 {
@@ -40,6 +41,12 @@ public class PlayerRespawn : MonoBehaviour
             collision.GetComponent<Collider2D>().enabled = false;
             collision.GetComponent<Animator>().SetTrigger("reached");
             SoundManager.instance.PlaySound(fireLit);
+        }
+
+        if (collision.transform.tag == "EndCP")
+        {
+            Debug.Log("End Game");
+            SceneManager.LoadScene(2);
         }
     }
 }
